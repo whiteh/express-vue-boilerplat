@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+    database:
+        image: mongo
+        ports:
+            - "27017:27017"
+    api:
+        build: ./api
+        volumes:
+            - ./api:/var/app
+        ports:
+            - "3000:3000"
+    front-end:
+        build: ./front-end
+        volumes:
+            - ./front-end:/var/app
+        ports:
+            - "8080:8080"

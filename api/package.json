@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "watch": {
+    "run": "./app"
+  },
+  "scripts": {
+    "test": "tape tests/**/*.js",
+    "watch": "npm-watch",
+    "run": "node app.js"
+  },
+  "author": "Mark Greenwood",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.0",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2"
+  },
+  "devDependencies": {
+    "npm-watch": "^0.2.0",
+    "tape": "^4.8.0"
+  }
+}
